@@ -1,0 +1,1194 @@
+body {
+    font-family: "Yeseva One";
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;  
+    top: 0;
+    width: 100%;  
+    background-color: rgba(255, 255, 255, 0.9);  
+    padding: 15px 0;  
+    z-index: 1000;  
+     
+  
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 34px;
+    text-decoration: none;
+    color: #333;
+    margin-left: 10px;  
+    font-family: "Yeseva One";
+
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ul1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+.ul1 li {
+    margin: 0 15px; 
+}
+
+.ul1 a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;  
+    font-size: 18px;
+    font-family: "Lato";
+    text-transform: capitalize;
+ }
+.ul1 a:hover , .ul1 a.active:hover{
+    color: #ff3f75;
+}
+.icons {
+    display: flex;
+    margin-right: 10px;
+    gap:30px;
+    font-size: 20px;
+}
+.icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-family: "Lato";
+    text-transform: capitalize;
+}
+/*........................................................header section.................................................................*/
+
+.home {
+    position: relative;  
+    padding: 100px 0;  
+    color: #fff;  
+    overflow: hidden;  
+    height: 100vh;
+    width: 100%;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;  
+    z-index: -1;  
+}
+
+.home-content {
+    position: relative; /* Ensure content appears above the image */
+    max-width: 800px; /* Limit content width */
+    margin-left: 100px ; /* Center the content */
+    margin-top: 100px;
+}
+
+.h1-home{
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.p1-home {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: black;
+    font-family: "Lato";
+
+
+}
+
+.btn1 {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    color:  black;
+    background-color: #9E8B8F; 
+    border: 2px solid  black;
+}
+.btn2 {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    color:  black;
+    background-color: #9E8B8F; 
+    border: 2px solid  black;
+    margin-left: 15px;
+}
+
+.btn1:hover {
+    background-color: #FF69B4;  
+    border-color: #FF69B4;  
+     
+}
+.btn2:hover {
+    background-color: #FF69B4;  
+    border-color: #FF69B4;  
+}
+
+
+/*........................................................home section.................................................................*/
+
+
+
+.about-us {
+    padding: 40px 20px;  
+      
+    margin-top: -150px;
+}
+
+.aboutus-section {
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+.section-title {
+    font-size: 36px;
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;  
+}
+
+.aboutus-content {
+    display: flex;  
+    justify-content: space-between;  
+    gap: 20px;  
+}
+
+.about-item {
+    flex: 1;  
+    height: 200px;  
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;  
+    overflow: hidden;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+    color: #fff;  
+    margin: 0 10px;  
+    position: relative; 
+    border: 1px solid pink; 
+}
+
+.about-content {
+    position: relative; /* Ensure content appears above the background image */
+    text-align: center;
+    z-index: 1; /* Keep content above the background image */
+}
+
+.about-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.about-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: "Lato";
+
+}
+ 
+.about-item:hover  {
+    opacity: 1; 
+    /* Show overlay on hover */
+}
+
+.about-item:hover .about-title,
+.about-item:hover .about-desc {
+    opacity: 1;
+    color: white; /* Show text on hover */
+}
+
+/* Covering animation for the after pseudo-element */
+.about-item:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: pink;
+    opacity: 1;
+    transition: width 0.7s, height 0.7s;
+}
+
+.about-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1; 
+    border-radius: 10px;/* Ensure the overlay covers the div */
+}
+
+.learn-more {
+    text-decoration: none;
+    color: #ff2870;  
+    border: 2px solid #ff2870;  
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: "Lato";
+     font-weight: bold;
+     
+
+ }
+
+.learn-more:hover {
+    background-color: #ff2870;  
+    color: #fff;  
+}
+.about-content i {
+    font-size: 30px;
+    color: black;
+}
+
+/*........................................................about us section.................................................................*/
+
+
+/* Portfolio Section Styling */
+.portfolio {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .portfolio-section {
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .section-description {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+     margin: auto;
+    
+  }
+  
+  .portfolio-item {
+    position: relative;
+    width: 320px;
+    height: 270px;
+    float: left;
+    margin:  20px 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .layer-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .portfolio-item:hover .layer-content {
+    opacity: 1;
+    border-radius: 10px;
+  }
+  
+  .layer-info {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .layer-info .category {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .layer-content-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .layer-info a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .layer-info a:hover {
+    color: #f39c12;
+  }
+  
+  .fa-edit, .fa-search {
+    margin: 0 5px;
+  }
+  
+
+
+/*........................................................portfolio section.................................................................*/
+
+
+
+.offer-section {
+    padding: 60px 0;
+    background-color: #fff5f5;
+    text-align: center;
+}
+
+.offer-header {
+    margin-bottom: 40px;
+}
+
+.title-section {
+    font-size: 36px;
+    color: #ff69b4;
+    text-transform: uppercase;
+}
+
+.offer-container {
+    max-width: 1280px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    overflow: hidden; /* Clear the floats */
+}
+
+.offer-item {
+    background-color: #fff;
+    border-radius: 140px 140px 0 0;
+    border: #333 solid 1px;
+    overflow: hidden;
+    text-align: left;
+    padding: 20px; /* Padding around content */
+    margin: 15px; /* Margin between items */
+    width: 280px; /* Ensure this fits within the container */
+    height: 400px;
+    float: left; /* Float each item to the left */
+    box-sizing: border-box; /* Include padding and border in width */
+    transition: transform 0.3s ease;
+    position: relative; /* Ensure the position context for overlay */
+}
+
+.offer-item img {
+    width: 120%; /* Extend beyond the padding */
+    height: 160px;
+    margin: -20px; /* Offset the padding */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.offer-title {
+    font-size: 24px;
+    color: #ff69b4;
+    margin: 40px 0 10px;
+}
+
+.offer-desc {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+    font-family: "Lato"
+}
+
+.offer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: "Lato";
+    font-weight: bold;
+}
+
+.offer-item:hover .offer-title {
+    color: black;
+}
+
+.offer-button:hover {
+    background-color: #ff3e96;
+}
+
+.offer-item:hover {
+    transform: translateY(-10px);
+}
+
+
+
+
+/*........................................................offer section.................................................................*/
+
+.service-section {
+    padding: 60px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.service-header {
+    margin-bottom: 40px;
+}
+
+.title-section {
+    font-size: 36px;
+    color: #ff69b4;
+    text-transform: uppercase;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+    font-family: "Lato";
+}
+
+.service-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows items to wrap if there’s not enough space */
+}
+
+.service-item {
+    position: relative;
+    width: 350px; /* Adjust width as needed */
+    height: 180px; /* Adjust height as needed */
+    overflow: hidden;
+    margin: 15px;
+    background-color: #fff; /* Background color for the item */
+    transition: 0.3s;
+    border: #ff69b4 solid 1px;
+  
+}
+
+.service-content {
+    position: absolute; /* Position the overlay on top of the content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    opacity: 1; /* Initially visible */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 1;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+}
+
+.service-title {
+    font-size: 24px;
+    transition: 0.9s; /* Smooth color transition */
+}
+
+.service-desc {
+    font-size: 16px;
+    transition: 0.9s; /* Smooth color transition */
+    font-family: "Lato";
+}
+
+.service-item:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.service-item:hover .service-title,
+.service-item:hover .service-desc {
+    opacity: 1;
+    color: white; /* Show text on hover */
+}
+
+/* Covering animation for the after pseudo-element */
+.service-item:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #ff69b4;
+    opacity: 1;
+    transition: width 0.7s, height 0.7s;
+}
+
+.service-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1; /* Ensure the overlay covers the div */
+}
+
+
+/*........................................................service section.................................................................*/
+
+
+
+.number-section {
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Ensures the background image stays within the section */
+    height: 250px;
+    background-image: url(../img/backgroundcake.avif);
+    background-attachment: fixed;
+    background-size: cover; /* Ensures the background image covers the section */
+    background-position: center;
+}
+
+.numberoverlay {
+    position: absolute; /* Position the overlay relative to .number-section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.4); /* Slight transparency for overlay */
+    z-index: 1; /* Ensure the overlay sits on top */
+}
+
+.number-container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    z-index: 2; /* Ensures content is above the background image */
+}
+
+.number-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    border: #333 dashed 2px;
+    position: relative;
+    z-index: 2;
+}
+
+.number {
+    font-size: 48px;
+    color: #ff69b4;
+    margin: 0 0 10px;
+}
+
+.number-desc {
+    font-size: 18px;
+    color: #555;
+}
+
+/*........................................................number section.................................................................*/
+
+.pricing-section {
+    padding: 60px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.pricing-header {
+    margin-bottom: 40px;
+}
+
+.title-section {
+    font-size: 36px;
+    color: #ff69b4;
+    text-transform: uppercase;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ }
+
+.pricing-item {
+    position: relative;
+    border-radius: 15px;
+    padding:30px;
+    width: 250px; /* Adjust width as needed */
+    height: 280px; /* Adjust height as needed */
+    margin: 15px;
+    text-align: left;
+    background-color: #fff; /* Background color for the item */
+    transition: 0.3s;
+    border: #ff69b4 solid 1px;
+  
+}
+
+.pricing-content {
+    position: absolute; /* Position the overlay on top of the content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-overlay {
+    opacity: 1; /* Initially visible */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 1;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+}
+.pricing-features {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+    color: #555;
+    transition: 0.9s; /* Smooth color transition */
+    font-family: "Lato";
+
+}
+
+.pricing-features li {
+    margin-bottom: 10px;
+    transition: 0.9s; /* Smooth color transition */
+
+}
+
+.pricing-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: "Lato";
+    font-weight: bold;
+}
+
+.pricing-title {
+    font-size: 24px;
+    color: #ff69b4;
+    margin-bottom: 20px;
+    transition: 0.9s; /* Smooth color transition */
+}
+
+.pricing-price {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    transition: 0.9s; /* Smooth color transition */
+}
+
+.pricing-item:hover .overlay {
+    opacity: 0.7;
+    border-radius: 15px; /* Show overlay on hover */
+}
+
+.pricing-item:hover .pricing-title,
+.pricing-item:hover .pricing-price,
+.pricing-item:hover .pricing-features,
+.pricing-item:hover .pricing-features li {
+    opacity: 1;
+    color: black; /* Show text on hover */
+}
+
+/* Covering animation for the after pseudo-element */
+.pricing-item:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fca5d3;
+    opacity: 0.9;
+    border-radius: 15px; /* Show overlay on hover */
+    transition: width 0.7s, height 0.7s;
+}
+
+.pricing-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7; /* Ensure the overlay covers the div */
+}
+.pricing-button:hover {
+    background-color: #ff3e96;
+}
+
+
+
+
+
+/*........................................................testimonial section.................................................................*/
+
+
+
+
+
+.testimonial-section {
+    padding: 60px 0;
+    background-image: url(../img/backgorundcake2.avif);
+    background-attachment: fixed;
+ }
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    }
+
+.testimonial-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    width: 100px;
+    text-align: center;
+    border: #333 solid 1px;
+ }
+
+ 
+
+.testimonial-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    position: relative;
+    padding: 20px;
+}
+
+.testimonial-rating {
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+.testimonial-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+}
+
+ 
+
+.testimonial-desc2 {
+    font-size: 16px;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.testimonial-quote {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    font-size: 40px;
+    color: #ff69b4;
+}
+
+
+
+
+
+
+
+.team-header {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+    font-family: "Lato";
+
+
+}
+
+.title-team {
+    font-size: 36px;
+    color: #ff69b4; /* Keeps your main website color */
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.team-section {
+    padding: 50px 0;
+    background-color: white;
+    
+}
+
+.team-container {
+    width: 90%;
+    margin: 100px auto 0 auto; /* Combined the margin properties */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+ }
+ .team-overlay {
+    opacity: 1; /* Initially visible */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 1;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+}
+.team-member:hover .overlay {
+    opacity: 0.7;
+    border-radius: 10px; /* Show overlay on hover */
+}
+
+ 
+/* Covering animation for the after pseudo-element */
+.team-member:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left:0;
+    background-color: #333;
+    opacity: 0.5;
+    border-radius: 10px; /* Show overlay on hover */
+    transition: width 0.7s, height 0.7s;
+}
+
+.team-member:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5; /* Ensure the overlay covers the div */
+}
+ 
+
+
+
+.team-member {
+    float: left;
+    width: 350px;
+    background-color: #F4D9D0;
+    text-align: center;
+    padding: 18px 18px;
+    border-radius: 10px;
+    margin-left: 20px ; /* Unified spacing */
+    position: relative; /* Ensures overlay positions correctly */
+    overflow: hidden; /* Prevents overlay overflow */
+ }
+
+ 
+
+.team-img {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.team-img img {
+    width: 100%;
+    border-radius: 10px; /* Matches the parent border radius */
+}
+
+.teamoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;  
+    border-radius: 10px;
+ }
+
+.team-member:hover .teamoverlay {
+    opacity: 1;
+}
+
+.teamoverlay a {
+    width: 40px;
+    text-decoration: none;
+    height: 40px;
+    margin-left: 10px;
+    background-color: rgb(45, 45, 255);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Circular buttons */
+ }
+
+.teamoverlay a:hover {
+    background-color: #ff69b4; /* Matches the main color on hover */
+}
+
+.teaminfotitle {
+    padding: 11px 0;
+}
+
+.teaminfop {
+    color: #C75B7A;
+    text-transform: uppercase;
+}
+
+.team-member:hover .teaminfotitle {
+    color: white;
+}
+
+.team-member:hover .teaminfop {
+    color: #921A40;
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+.blog-section {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center;
+}
+
+.blog-header {
+    margin-bottom: 30px;
+}
+
+.title-blog {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 100px;
+}
+
+.blog-post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.blog-post:hover {
+    transform: translateY(-10px);
+}
+
+.blog-post-large {
+    flex: 2 1 60%; /* Large post takes up more space */
+    height: 450px;
+}
+
+.blog-post-medium {
+    flex: 1 1 30%; /* Medium post takes up moderate space */
+    height: 450px;
+}
+
+.blog-post-small {
+    flex: 1 1 20%; /* Small post takes up lesser space */
+    height: 250px;
+}
+
+.blog-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.blog-img:hover img {
+    transform: scale(1.1);
+}
+
+.blog-title {
+    font-size: 27px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    margin: 0;
+    z-index: 2;
+  }
+
+.blog-description {
+    font-size: 16px;
+    color: black;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    z-index: 2;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px;
+    width: 100%;
+    height: 300px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.footer ul li {
+    margin: 10px 0;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+.footer ul li a:hover {
+    color: #a5a3a3;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 20px; /* Adjusted for better spacing */
+}
+
+.socials a {
+    color: #a5a3a3;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #fff;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.footer-list-header {
+    font-size: 1em;
+    color: #949393;
+    margin-bottom: 10px;
+}
+
+ 
